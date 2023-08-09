@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,900;1,300;1,600;1,700&family=Black+Ops+One&family=Pathway+Gothic+One&family=Rubik+Glitch&display=swap');
+
+
+body {
+  margin: 0px;
+}
+
+.nav-container {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  background-color: #1b1b1b;
+}
+
+#navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+  color: #fff;
+  margin-top: 4vh;
+  cursor: pointer;
+}
+
+#seeCarrito {
+  color: #fff;
+  font-size: 21px;
+  margin-right: 20px;
+  margin-top: 4.5vh;
+}
+
+/*Banner styles*/
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.bannerContainer {
+  text-align: center;
+  padding: 15% 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 30px;
+  color: white;
+  opacity: 0.7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*styles for banner botton*/
+.btn-flat {
+  color: white;
+  padding: 16px 35px;
+  border-radius: 4px;
+  background: #1b1b1b;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-flat:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+/*shop content styles*/
+#shopContent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/*cards product styles*/
+
+#shopContent {
+  margin: 65px 15% 65px 15%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 32.5px;
+}
+.card img {
+  height: 200px;
+  width: 140px;
+}
+
+.cardInfo {
+  height: 100px;
+}
+.price {
+  color: grey;
+  margin-top: -10px;
+}
+.card h3 {
+  color: #3f3f3f;
+  margin-top: -1px;
+}
+.card h5 {
+  color: #999;
+  margin-top: -10px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: #fff;
+  background-color: #1b1b1b;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/*carrito Styles*/
+
+.modal {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 5;
+  top: 12vh;
+  left: 0;
+  width: 100%;
+  height: 88vh;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 8px;
+  border: 1px solid #888;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.modalContent > img {
+  height: 120px;
+  width: 100px;
+}
+
+.modalContent > h4 {
+  margin-top: 50px;
+}
+
+.modalContent > i {
+  margin-top: 50px;
+  color: #fc211acc;
+}
+i:hover {
+  cursor: pointer;
+}
+.modal > .totalBuying {
+  text-align: end;
+  width: 70%;
+  padding: 8px;
+  margin: 0 auto;
+  background-color: #1b1b1b;
+  color: #fff;
+}
+.modal > .payContent {
+  text-align: center;
+  width: 70%;
+  padding: 8px;
+  margin: 0 auto;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+/*Alert Style*/
+.flash {
+  padding: 16px 24px;
+  position: fixed;
+  right: 10px;
+  background: #1b1b1b;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin: 8px;
+}
+
+.flash-success {
+  border: 2px solid #127247;
+}
+
+footer {
+  height: 12vh;
+  background-color: #1b1b1b;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*paypal payment styles*/
+.paymentModal {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  z-index: 5;
+  top: 12vh;
+  left: 0;
+  width: 100%;
+  height: 88vh;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.paymentModalContain {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 8px;
+  border: 1px solid #888;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+/*Search-Bar*/
+
+.search-products-container {
+  text-align: center;
+  padding: 30px;
+  background-color: #1b1b1b;
+}
+.search-products {
+  padding: 10px;
+  color: #565555;
+  width: 300px;
+}
+
+.suggestions {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.suggestionText {
+  margin-top: 30px;
+  color: red;
+}
+
+
+.banner{
+  background-image: url("img/FONDO 2.avif") ;
+
+}
+
+.header-logo {
+  margin: 50px;
+  font-size: clamp(1rem , 4vw, 2.5rem);
+  color: black;
+  font-family: 'black ops one';
+  text-decoration: none;
+}
+
+.header-logo span{
+  color: orange;
+}

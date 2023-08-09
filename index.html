@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/ee3d08c0a8.js" crossorigin="anonymous"></script>
+    <title>EL GALPON</title>
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <nav class="navbar">
+        <a class="header-logo " href="../index.html">EL GA<span>LPON</span></a>
+        <i id="seeCarrito" class="fa-solid fa-cart-shopping"></i>
+      </nav>
+    </div>
+    <div id="showAlert" class="flash flash-success alert alert-dismissible fade show" role="alert"></div>
+
+    <div id="paypal-payment-content" class="paymentModal">
+      <div class="paymentModalContain">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+
+    <div id="carrito-content" class="modal"></div>
+
+    <div class="banner">
+      <div class="bannerContainer">
+        <h1>EL GALPON GYM </h1>
+        <p>Encontra los mejores suplementos</p>
+        <a class="btn btn-flat" href="#shopContent">TIENDA</a>
+      </div>
+    </div>
+
+
+    <div id="shopContent"></div>
+
+    <script src="./js/products.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/modals.js"></script>
+    <script src="./js/searchBar.js"></script>
+    <script src="./js/alert.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=Aag7jGiYPZGVhJjPBm2sH_QFocIpXr3IyYYmbO12RXJDYf3xwvPZ0ePIfm3XQ_21mBj3v_grCrHzGYD3&currency=EUR"></script>
+  </body>
+</html>
